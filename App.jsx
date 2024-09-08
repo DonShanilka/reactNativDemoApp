@@ -1,5 +1,10 @@
-import React from 'react'
-import { Text, View ,ActivityIndicator, TextInput,Button,SafeAreaView,Image, StyleSheet} from 'react-native'
+import * as React from 'react';
+import { Text, View ,ActivityIndicator,Button,SafeAreaView,Image, StyleSheet} from 'react-native'
+import LoginPage from './pages/LoginPage';
+import SavePage from './pages/SavePage';
+import { TextInput } from 'react-native-paper';
+import { AppRegistry } from 'react-native';
+import { PaperProvider } from 'react-native-paper';
 
 
 function App() {
@@ -8,7 +13,8 @@ function App() {
 
   return (
     <View>
-      <Text style={styles.txt}>Hello</Text>
+      <LoginPage/>
+      {/* <Text style={styles.txt}>Hello</Text>
       <ActivityIndicator size="large" color="#00ff00" />
       <Button style={styles.btn} 
         onPress={console.log("Hello World")}
@@ -35,7 +41,7 @@ function App() {
 
       <Image width={100}
         height={100}
-        source={require('./assets/animal.jpg')}/>
+        source={require('./assets/animal.jpg')}/> */}
     </View>
   )
 }
